@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页 | Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Mi</div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">首页</a>
+                <a href="#about" class="nav-link">关于我</a>
+                <a href="#portfolio" class="nav-link">作品集</a>
+                <a href="#skills" class="nav-link">技能</a>
+                <a href="#contact" class="nav-link">联系</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页/英雄区域 -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">你好，我是 <span class="highlight">Mi</span></h1>
+                <p class="hero-subtitle">全栈开发者 & AI爱好者</p>
+                <p class="hero-description">专注于创造有价值的数字产品，热爱技术与设计的完美结合</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">查看作品</a>
+                    <a href="#contact" class="btn btn-secondary">联系我</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-placeholder">
+                    <span>MI</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>向下滚动</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">关于我</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>我是一名充满热情的开发者，对技术有着深厚的兴趣。我专注于构建现代化的Web应用，并致力于将AI技术融入日常开发中。</p>
+                    <p>在过去的项目中，我积累了丰富的经验，从简单的静态网站到复杂的全栈应用。我相信好的设计不仅要美观，更要实用。</p>
+                    <p>除了编程，我还喜欢探索新技术、阅读科技文章，以及分享我的学习心得。</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">年开发经验</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-label">完成项目</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">技术栈</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品集 -->
+    <section id="portfolio" class="section portfolio-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">作品集</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="portfolio-grid">
+                <!-- 项目卡片 1 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">AI</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">AI能耗预测系统</h3>
+                        <p class="portfolio-description">基于机器学习的能源消耗预测平台，帮助用户优化能源使用效率。</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">机器学习</span>
+                            <span class="tag">数据分析</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link">查看详情 →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目卡片 2 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">Web</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">个人博客系统</h3>
+                        <p class="portfolio-description">现代化的博客平台，支持Markdown写作、评论系统和SEO优化。</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link">查看详情 →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目卡片 3 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">App</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">任务管理应用</h3>
+                        <p class="portfolio-description">跨平台的任务管理工具，支持实时协作和数据同步。</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">PWA</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link">查看详情 →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目卡片 4 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">Data</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">数据可视化仪表板</h3>
+                        <p class="portfolio-description">实时数据监控和分析平台，支持多种图表类型和自定义报表。</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">D3.js</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Flask</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link">查看详情 →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目卡片 5 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">API</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">RESTful API服务</h3>
+                        <p class="portfolio-description">高性能的API服务，支持认证、限流和版本管理。</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Go</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link">查看详情 →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目卡片 6 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">UI</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">设计系统组件库</h3>
+                        <p class="portfolio-description">可复用的UI组件库，支持主题定制和无障碍访问。</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Storybook</span>
+                            <span class="tag">CSS-in-JS</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link">查看详情 →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能 -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">技能栈</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">前端开发</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML/CSS</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Vue.js</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">后端开发</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Go</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">数据库</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">AI/数据</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">机器学习</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">数据分析</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">数据可视化</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">LLM应用</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">工具/其他</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Git</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Linux</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">云服务</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">联系我</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>邮箱</h4>
+                            <p>mi@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>位置</h4>
+                            <p>中国，北京</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div class="contact-details">
+                            <h4>工作状态</h4>
+                            <p>开放合作机会</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="您的姓名" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="您的邮箱" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="您的留言..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">发送消息</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="#" class="social-link" title="GitHub">GitHub</a>
+                <a href="#" class="social-link" title="LinkedIn">LinkedIn</a>
+                <a href="#" class="social-link" title="Twitter">Twitter</a>
+                <a href="#" class="social-link" title="Blog">博客</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Mi. 保留所有权利。</p>
+            <p>用 ❤️ 和 ☕ 制作</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
